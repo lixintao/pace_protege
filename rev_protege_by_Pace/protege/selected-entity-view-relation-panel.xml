@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout>
+
+    <HSNode splits="0.375 0.625">
+
+        <CNode>
+            
+        </CNode>
+
+        <VSNode splits="0.2 0.8">
+            <CNode>
+                <Component label="Characteristics">
+                    <Property id="pluginId" value="org.protege.editor.owl.OWLRelationCharacteristics"/>
+                </Component>
+            </CNode>
+
+            <CNode>
+			
+            </CNode>
+        </VSNode>
+    </HSNode>
+</layout>

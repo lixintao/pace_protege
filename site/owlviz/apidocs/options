@@ -1,0 +1,24 @@
+-classpath
+'C:/work/Protege/2016-9-5 Protege-v4/Pace-protege-v4-src/owlviz/target/classes;C:/work/Protege/2016-9-5 Protege-v4/Pace-protege-v4-src/owlapi0/contract/target/owlapi-contract-3.5.0.jar;C:/Users/Lixin/.m2/repository/edu/stanford/protege/org.protege.common/5.0.0-beta-15/org.protege.common-5.0.0-beta-15.jar;C:/Users/Lixin/.m2/repository/org/eclipse/equinox/org.eclipse.equinox.common/3.6.0.v20100503/org.eclipse.equinox.common-3.6.0.v20100503.jar;C:/Users/Lixin/.m2/repository/edu/stanford/protege/protege-owlapi-extensions/3.2.6/protege-owlapi-extensions-3.2.6.jar;C:/work/Protege/2016-9-5 Protege-v4/Pace-protege-v4-src/owlapi0/tools/target/owlapi-tools-3.5.0.jar;C:/Users/Lixin/.m2/repository/xml-resolver/xml-resolver/1.2/xml-resolver-1.2.jar;C:/work/Protege/2016-9-5 Protege-v4/Pace-protege-v4-src/owlapi0/apibinding/target/owlapi-apibinding-3.5.0.jar;C:/work/Protege/2016-9-5 Protege-v4/Pace-protege-v4-src/owlapi0/distribution/target/owlapi-distribution-3.5.0.jar;C:/Users/Lixin/.m2/repository/net/sourceforge/owlapi/jfact/1.0.0/jfact-1.0.0.jar;C:/work/Protege/2016-9-5 Protege-v4/Pace-protege-v4-src/owlapi0/oboformat/target/owlapi-oboformat-3.5.0.jar;C:/Users/Lixin/.m2/repository/com/jgoodies/looks/2.2.2/looks-2.2.2.jar;C:/Users/Lixin/.m2/repository/org/eclipse/core/org.eclipse.core.jobs/3.5.0.v20100515/org.eclipse.core.jobs-3.5.0.v20100515.jar;C:/Users/Lixin/.m2/repository/com/google/guava/guava/17.0/guava-17.0.jar;C:/Users/Lixin/.m2/repository/org/apache/felix/org.apache.felix.framework/4.2.1/org.apache.felix.framework-4.2.1.jar;C:/Users/Lixin/.m2/repository/org/apache/felix/org.osgi.core/1.4.0/org.osgi.core-1.4.0.jar;C:/Users/Lixin/.m2/repository/edu/stanford/protege/org.protege.editor.owl/5.0.0-beta-15/org.protege.editor.owl-5.0.0-beta-15.jar;C:/Users/Lixin/.m2/repository/org/eclipse/equinox/org.eclipse.equinox.registry/3.5.0.v20100503/org.eclipse.equinox.registry-3.5.0.v20100503.jar;C:/work/Protege/2016-9-5 Protege-v4/Pace-protege-v4-src/owlapi0/api/target/owlapi-api-3.5.0.jar;C:/Users/Lixin/.m2/repository/edu/stanford/protege/org.protege.xmlcatalog/1.0.4/org.protege.xmlcatalog-1.0.4.jar;C:/Users/Lixin/.m2/repository/org/apache/felix/org.apache.felix.main/4.2.1/org.apache.felix.main-4.2.1.jar;C:/Users/Lixin/.m2/repository/org/eclipse/osgi/org.eclipse.osgi/3.6.0.v20100517/org.eclipse.osgi-3.6.0.v20100517.jar;C:/Users/Lixin/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar;C:/work/Protege/2016-9-5 Protege-v4/Pace-protege-v4-src/owlapi0/parsers/target/owlapi-parsers-3.5.0.jar;C:/Users/Lixin/.m2/repository/com/googlecode/mdock/mdock/1.1/mdock-1.1.jar;C:/Users/Lixin/.m2/repository/edu/stanford/protege/org.protege.editor.core.application/5.0.0-beta-15/org.protege.editor.core.application-5.0.0-beta-15.jar;C:/work/Protege/2016-9-5 Protege-v4/Pace-protege-v4-src/owlapi0/impl/target/owlapi-impl-3.5.0.jar'
+-encoding
+'Cp1252'
+-protected
+-sourcepath
+'C:/work/Protege/2016-9-5 Protege-v4/Pace-protege-v4-src/owlviz/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2017. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/work/Protege/2016-9-5 Protege-v4/Pace-protege-v4-src/owlviz/target/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'OWLViz 4.1.6-SNAPSHOT API'
+-linkoffline
+'http://docs.oracle.com/javase/7/docs/api' 'C:/work/Protege/2016-9-5 Protege-v4/Pace-protege-v4-src/owlviz/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'OWLViz 4.1.6-SNAPSHOT API'

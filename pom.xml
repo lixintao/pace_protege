@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>edu.pace.csis</groupId>
+  <artifactId>Protege-Root</artifactId>
+  <version>1</version>
+  <packaging>pom</packaging>
+  <name>Protege-Root</name>
+  <modules>
+    <module>owlapi0</module>
+    <module>owlapi1</module>
+    <module>owlviz</module>
+    <module>protege</module>
+    <module>protege-owlapi</module>
+  </modules>
+  <properties>
+  	<!-- Skip javadoc generation, avoid command line -Dmaven.javadoc.skip=true -->
+    <maven.javadoc.skip>true</maven.javadoc.skip> 
+    <!-- Skip tests, avoid command line -DskipTests -->
+    <skipTests>true</skipTests>
+  </properties>
+</project>

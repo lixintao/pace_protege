@@ -1,0 +1,20 @@
+# Maven
+target/
+build
+
+# maven-dependency-plugin
+/*.jar
+
+# Eclipse
+.classpath
+.project
+.settings/
+META-INF/
+/bin
+build.properties
+
+# IntelliJ
+.idea
+*.iml
+*.ipr
+

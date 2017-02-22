@@ -1,0 +1,238 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>edu.pace.csis</groupId>
+		<artifactId>Protege-Root</artifactId>
+		<version>1</version>
+	</parent>
+	
+	<groupId>edu.stanford.protege</groupId>
+  <artifactId>protege-parent</artifactId>
+  <version>5.0.0-beta-18-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>Protege Desktop</name>
+	<description>Protege is a free, open source ontology editor that supports the full OWL 2 standard.</description>
+	<url>http://protege.stanford.edu</url>
+	<inceptionYear>1987</inceptionYear>
+	<organization>
+		<name>Stanford Center for Biomedical Informatics Research</name>
+		<url>http://bmir.stanford.edu/</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>BSD 2-Clause License</name>
+			<url>http://opensource.org/licenses/BSD-2-Clause</url>
+		</license>
+	</licenses>
+	
+	<!-- Alphabetical by last name -->
+	<developers>
+		<developer>
+			<id>matthewhorridge</id>
+			<name>Matthew Horridge</name>
+			<email>matthew.horridge@stanford.edu</email>
+		</developer>
+		<developer>
+			<id>csnyulas</id>
+			<name>Csongor Nyulas</name>
+			<email>csongor.nyulas@stanford.edu</email>
+		</developer>
+		<developer>
+			<id>stdotjohn</id>
+			<name>Timothy Redmond</name>
+			<email>tredmond@stanford.edu</email>
+		</developer>
+		<developer>
+			<id>tudorache</id>
+			<name>Tania Tudorache</name>
+			<email>tudorache@stanford.edu</email>
+		</developer>
+		<developer>
+			<id>jvendetti</id>
+			<name>Jennifer Vendetti</name>
+			<email>vendetti@stanford.edu</email>
+		</developer>
+	</developers>
+	
+	<contributors>
+		<contributor>
+			<name>Nick Drummond</name>
+			<email>nickdrummond@yahoo.com</email>
+		</contributor>
+	</contributors>
+	
+	<mailingLists>
+		<!-- For end users of Protege Desktop. -->
+		<mailingList>
+			<name>protege-user</name>
+			<subscribe>https://mailman.stanford.edu/mailman/listinfo/protege-user</subscribe>
+			<unsubscribe>https://mailman.stanford.edu/mailman/listinfo/protege-user</unsubscribe>
+			<post>protege-user@lists.stanford.edu</post>
+			<archive>http://protege-project.136.n4.nabble.com/</archive>
+			<otherArchives>
+				<otherArchive>https://mailman.stanford.edu/pipermail/protege-user/</otherArchive>
+			</otherArchives>
+		</mailingList>
+		
+		<!-- For developers with questions about source code, developing Protege Desktop plug-ins, and/or programmatic access of ontologies.  -->
+		<mailingList>
+			<name>protege-dev</name>
+			<subscribe>https://mailman.stanford.edu/mailman/listinfo/protege-dev</subscribe>
+			<unsubscribe>https://mailman.stanford.edu/mailman/listinfo/protege-dev</unsubscribe>
+			<post>protege-dev@lists.stanford.edu</post>
+			<archive>http://protege-project.136.n4.nabble.com/</archive>
+			<otherArchives>
+				<otherArchive>https://mailman.stanford.edu/pipermail/protege-dev/</otherArchive>
+			</otherArchives>
+		</mailingList>
+	</mailingLists>
+		
+	<modules>
+		<module>org.protege.common</module>
+		<module>org.protege.editor.core.application</module>
+		<module>org.protege.editor.owl</module>
+		<module>protege-base</module>
+		<module>protege-distribution</module>
+	</modules>
+	
+	<scm>
+		<connection>scm:git:git@github.com:protegeproject/protege.git</connection>
+		<developerConnection>scm:git:git@github.com:protegeproject/protege.git</developerConnection>
+		<url>https://github.com/protegeproject/protege</url>
+	  <tag>HEAD</tag>
+	</scm>
+	<issueManagement>
+		<system>GitHub</system>
+		<url>https://github.com/protegeproject/protege/issues</url>
+	</issueManagement>
+	
+	<!-- Protege libraries are hosted on Sonatype OSSRH (OSS Repository Hosting Service). -->
+	<distributionManagement>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
+	</distributionManagement>
+	
+	<properties>
+	    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.javadoc.failOnError>false</maven.javadoc.failOnError>
+	</properties>
+	
+	<dependencyManagement>
+		<dependencies>
+
+            <dependency>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>org.apache.felix.main</artifactId>
+				<version>4.4.1</version>
+			</dependency>
+
+		</dependencies>
+	</dependencyManagement>
+				
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.0</version>
+					<configuration>
+						<source>1.7</source>
+						<target>1.7</target>
+					</configuration>
+				</plugin>
+							
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-assembly-plugin</artifactId>
+					<version>2.4</version>
+					<configuration>
+						<descriptors>
+							<descriptor>protege-distribution/src/main/assembly/protege-as-directory.xml</descriptor>
+							<descriptor>protege-distribution/src/main/assembly/protege-as-app.xml</descriptor>
+						</descriptors>
+					</configuration>
+				</plugin>
+				
+				<plugin>
+					<artifactId>maven-release-plugin</artifactId>
+					<version>2.5</version>
+					<dependencies>
+						<dependency>
+							<groupId>org.apache.maven.scm</groupId>
+							<artifactId>maven-scm-provider-gitexe</artifactId>
+							<version>1.9</version>
+						</dependency>
+					</dependencies>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+	
+	<!-- Generate source and Javadoc JAR files, and sign artifacts.  Required by Sonatype OSSRH for deployment. -->
+    <profiles>
+		<profile>
+			<id>prepare-release</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-source-plugin</artifactId>
+						<version>2.2.1</version>
+						<executions>
+							<execution>
+								<id>attach-sources</id>
+								<goals>
+									<goal>jar</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+		
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-javadoc-plugin</artifactId>
+						<version>2.9.1</version>
+						<executions>
+							<execution>
+								<id>attach-javadocs</id>
+								<goals>
+									<goal>jar</goal>
+								</goals>
+								<configuration>
+									<failOnError>false</failOnError>
+									<quiet>true</quiet>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+		
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-gpg-plugin</artifactId>
+						<version>1.5</version>
+						<executions>
+							<execution>
+								<id>sign-artifacts</id>
+								<phase>verify</phase>
+								<goals>
+									<goal>sign</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+    </profiles>
+</project>
